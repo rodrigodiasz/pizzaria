@@ -47,7 +47,7 @@ router.get("/me", isAuthenticated, new DetailUserController().handle)
 
 //Rotas Category
 
-router.post("/post", isAuthenticated, new CreateCategoryController().handle)
+router.post("/category", isAuthenticated, new CreateCategoryController().handle)
 
 router.get("/category", isAuthenticated, new ListCategoryController().handle)
 
@@ -67,7 +67,7 @@ router.delete("/order/remove", isAuthenticated, new RemoveItemController().handl
 
 router.put("/order/send", isAuthenticated, new SendOrderController().handle)
 
-router.put("/orders", isAuthenticated, new ListOrdersController().handle)
+router.get("/orders", isAuthenticated, new ListOrdersController().handle)
 router.get("/order/detail", isAuthenticated, new DetailOrderController().handle)
 router.put("/order/finish", isAuthenticated, new FinishOrderController().handle)
 

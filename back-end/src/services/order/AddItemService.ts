@@ -1,6 +1,6 @@
 import prismaClient from "../../prisma";
 
-interface ItemRequest {
+interface OrderRequest {
   order_id: string
   product_id: string
   amount: number

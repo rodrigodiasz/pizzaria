@@ -40,7 +40,7 @@ cd pizzaria
 ### Front-end
 
 ```bash
-cd frontend
+cd front-end
 npm install
 # ou
 yarn install
@@ -49,7 +49,7 @@ yarn install
 ### Back-end
 
 ```bash
-cd ../backend
+cd ../back-end
 npm install
 # ou
 yarn install
